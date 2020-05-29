@@ -1,0 +1,63 @@
+html body #surfValuesBlock * {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: IBM Plex Mono;
+    font-style: normal;
+    text-align: left;
+}
+
+#surfValuesBlock {
+    width: 100%;
+    background-color: black;
+    padding: 65px 50px;
+    padding-bottom: 71px;
+}
+
+#surfValuesBlock .surf-values-header {
+    font-size: 72px;
+    height: 64px;
+    font-weight: bold;
+    margin-bottom: 58px;
+}
+
+#surfValuesBlock .surf-values-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#surfValuesBlock .surf-values-column {
+    min-width: 320px;
+}
+#surfValuesBlock .surf-values-column:first-child {
+    margin-right: 76px;
+}
+
+#surfValuesBlock ul.surf-values-block {
+    list-style-type: disc;
+}
+
+#surfValuesBlock ul.surf-values-block li {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#surfValuesBlock .surf-values-block h2 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 47px;
+}
+
+@media screen and (max-width: 1130px) {
+    #surfValuesBlock .surf-values-list {
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width: 1130px) {
+    #surfValuesBlock .surf-values-column:last-child {
+        padding-top: 122px;
+    }
+}
