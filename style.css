@@ -2,16 +2,17 @@ html body #surfValuesBlock * {
     padding: 0;
     margin: 0;
     color: white;
-    font-family: IBM Plex Mono;
+    font-family: 'IBM Plex Mono', monospace;
     font-style: normal;
     text-align: left;
 }
 
 #surfValuesBlock {
-    width: 100%;
     background-color: black;
     padding: 65px 50px;
-    padding-bottom: 71px;
+    padding-bottom: 72px;
+    position: relative;
+    overflow: hidden;
 }
 
 #surfValuesBlock .surf-values-header {
@@ -19,45 +20,209 @@ html body #surfValuesBlock * {
     height: 64px;
     font-weight: bold;
     margin-bottom: 58px;
+    position: absolute;
+    top: -136px;
+    width: 200%;
 }
 
 #surfValuesBlock .surf-values-list {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 136px;
 }
 
 #surfValuesBlock .surf-values-column {
     min-width: 320px;
+    max-width: 835px;
+    position: relative;
 }
 #surfValuesBlock .surf-values-column:first-child {
-    margin-right: 76px;
+    margin-right: 7%;
 }
 
 #surfValuesBlock ul.surf-values-block {
     list-style-type: disc;
+    margin-bottom: 49px;
+    position: relative;
 }
 
 #surfValuesBlock ul.surf-values-block li {
     font-size: 20px;
     line-height: 24px;
+    margin-left: 20px;
 }
 
 #surfValuesBlock .surf-values-block h2 {
     font-weight: 600;
     font-size: 36px;
     line-height: 47px;
+    margin-bottom: 5px;
 }
 
-@media screen and (max-width: 1130px) {
+/* #surfValuesBlock .surf-values-block span {
+    display: inline-block;
+    position: relative;
+} */
+
+#surfValuesBlock .image {
+    position: absolute;
+}
+
+/* #surfValuesBlock #valueRed0 {
+    width: 349px;
+    height: 348px;
+    background: no-repeat url('./images/values_red0.svg');
+    background-size: 100% 100%;
+    top: -142px;
+    left: 759px;
+}
+
+#surfValuesBlock #valueBlue0 {
+    width: 406px;
+    height: 238px;
+    background: no-repeat url('./images/values_blue0.svg');
+    background-size: 100% 100%;
+    bottom: -40px;
+    left: 955px;
+} */
+#surfValuesBlock #valueRed0 {
+    width: 349px;
+    height: 348px;
+    top: -72px;
+    left: 1039px;
+}
+
+#surfValuesBlock #valueRed1 {
+    width: 215px;
+    height: 111px;
+    top: 0;
+    right: 20px;
+}
+
+#surfValuesBlock #valueBlue0 {
+    width: 406px;
+    height: 238px;
+    bottom: 0;
+    right: 10%;
+}
+
+#surfValuesBlock #smileBoom {
+    width: 60px;
+    height: 60px;
+    top: 10%;
+    left: 75%;
+    /* top: 182px;
+    right: 641px; */
+}
+
+#surfValuesBlock #climber {
+    width: 60px;
+    height: 60px;
+    top: 311px;
+    left: 874px;
+}
+
+#surfValuesBlock #brain {
+    width: 40px;
+    height: 40px;
+    top: 437px;
+    left: 638px;
+}
+
+/* 1990/995*/
+/* @media all and (min-width: 1990px) {
+    #surfValuesBlock #valueBlue0 {
+        width: 406px;
+        height: 238px;
+        bottom: 0;
+        left: 1486px;
+    }
+} */
+
+/* 1990 <  */
+/* @media all and (min-width: 1990px) {
+    
+} */
+
+@media all and (max-width: 2400px) {
+    #surfValuesBlock #valueRed0 {
+        top: -142px;
+        left: 759px;
+    }
+    #surfValuesBlock #valueBlue0 {
+        bottom: -10px;
+        /* left: 1196px; */
+    }
+    #surfValuesBlock #climber {
+        top: 240px;
+        left: 704px;
+    }
+}
+
+@media all and (max-width: 1900px) {
+    #surfValuesBlock #valueBlue0 {
+        bottom: -40px;
+        /* left: 955px; */
+    }
+    #surfValuesBlock #climber {
+        top: 155px;
+        left: 656px;
+    }
+}
+
+@media all and (max-width: 1700px) {
+    #surfValuesBlock #valueRed1 {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1400px) {
+
+}
+
+@media all and (max-width: 1370px) {
+    #surfValuesBlock #climber {
+        top: 200px;
+        /* left: 550px; */
+        left: 47%;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    #surfValuesBlock #valueBlue0 {
+        display: none;
+    }
+    #surfValuesBlock #climber {
+        top: 243px;
+        left: 705px;
+    }
+}
+
+
+@media all and (min-width: 1000px) {
+    #surfValuesBlock .surf-values-header {
+        top: -131px;
+    }
+}
+
+@media all and (max-width: 1270px) {
+    #surfValuesBlock #smileBoom {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1000px) {
     #surfValuesBlock .surf-values-list {
         justify-content: start;
         flex-wrap: wrap;
     }
-}
 
-@media screen and (min-width: 1130px) {
-    #surfValuesBlock .surf-values-column:last-child {
-        padding-top: 122px;
+    #surfValuesBlock #valueBlue0 {
+        display: none;
+    }
+    
+    #surfValuesBlock ul.surf-values-block {
+        margin-bottom: 40px;
     }
 }
