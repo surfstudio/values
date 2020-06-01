@@ -9,10 +9,23 @@ html body #surfValuesBlock * {
 
 #surfValuesBlock {
     background-color: black;
-    padding: 65px 50px;
-    padding-bottom: 72px;
+    padding: 68px 58px;
+    padding-top: 136px;
+    padding-bottom: 239px;
     position: relative;
     overflow: hidden;
+}
+
+.background-first {
+    width: 100%;
+    height: 100%;
+    background: no-repeat url('./images/ellipse_blue.svg');
+}
+
+.background-second {
+    width: 100%;
+    height: 100%;
+    background: no-repeat url('./images/ellipse_red.svg');
 }
 
 #surfValuesBlock .surf-values-header {
@@ -163,18 +176,34 @@ html body #surfValuesBlock * {
     
 } */
 
+@media all and (min-width: 2400px) {
+    #surfValuesBlock #valueBlue0 {
+        bottom: -240px;
+    }
+}
+
 @media all and (max-width: 2400px) {
     #surfValuesBlock #valueRed0 {
         top: -142px;
         left: 759px;
     }
+
     #surfValuesBlock #valueBlue0 {
         bottom: -100px;
-        /* left: 1196px; */
+    }
+
+    #surfValuesBlock {
+        padding-top: 65px;
+        padding-bottom: 100px;
     }
 }
 
 @media all and (max-width: 1900px) {
+    #surfValuesBlock {
+        padding-top: 63px;
+        padding-bottom: 71px;
+    }
+
     #surfValuesBlock #valueBlue0 {
         bottom: -110px;
         /* left: 955px; */
@@ -222,12 +251,13 @@ html body #surfValuesBlock * {
 } */
 
 @media all and (max-width: 1000px) {
+    #surfValuesBlock {
+        padding-top: 68px;
+        padding-bottom: 75px;
+    }
+
     #surfValuesBlock #valueBlue0 {
         display: none;
-    }
-    #surfValuesBlock #climber {
-        /* top: 243px;
-        left: 705px; */
     }
 }
 
