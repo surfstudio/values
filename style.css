@@ -107,8 +107,8 @@ html body #surfValuesBlock * {
 #surfValuesBlock #valueBlue0 {
     width: 406px;
     height: 238px;
-    bottom: 0;
-    right: 10%;
+    left: 150px;
+    bottom: -72px;
 }
 
 #surfValuesBlock #smileBoom {
@@ -169,14 +169,14 @@ html body #surfValuesBlock * {
         left: 759px;
     }
     #surfValuesBlock #valueBlue0 {
-        bottom: -10px;
+        bottom: -100px;
         /* left: 1196px; */
     }
 }
 
 @media all and (max-width: 1900px) {
     #surfValuesBlock #valueBlue0 {
-        bottom: -40px;
+        bottom: -110px;
         /* left: 955px; */
     }
     #surfValuesBlock #smileDrooling {
