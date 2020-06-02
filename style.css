@@ -19,29 +19,6 @@
     padding-bottom: 239px;
 }
 
-/* .background-block {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-position: center center;
-    background-size: 100% 100%;
-}
-
-.background-first {
-    background: no-repeat url('./images/ellipse_red.svg');
-}
-
-.background-second {
-    background: no-repeat url('./images/ellipse_blue.svg');
-} */
-
-/* .background-first, .background-second {
-    width: 1467px;
-    height: 448px;
-} */
-
 .background-draw-block {
     width: 1632px;
     height: 1537px;
@@ -154,8 +131,6 @@
     height: 60px;
     top: 10%;
     left: 75%;
-    /* top: 182px;
-    right: 641px; */
 }
 
 #surfValuesBlock #climber {
@@ -285,12 +260,13 @@
 @media all and (max-width: 1280px) {
     #surfValuesBlock #climber {
         top: 0;
+        right: -10px;
     }
 }
 
 @media all and (max-width: 1240px) {
     #surfValuesBlock #climber {
-        right: -30px;
+        right: -35px;
     }
 
     #surfValuesBlock #fire {
@@ -300,7 +276,7 @@
 
 @media all and (max-width: 1130px) {
     #surfValuesBlock #climber {
-        right: -50px;
+        right: -55px;
     }
 
 }
