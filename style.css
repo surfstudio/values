@@ -202,14 +202,6 @@ body {
 
 }
 
-@media all and (max-width: 1150px) {
-    #surfValuesBlock .surf-values-list {
-        justify-content: start;
-        flex-wrap: wrap;
-    }
-}
-
-
 @media all and (max-width: 1000px) {
 
     #surfValuesBlock #valueBlue0 {
