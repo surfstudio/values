@@ -128,7 +128,16 @@
             </div>
         </div>
         <script>
-        function applySize(){var i;for(i=0;i<10;i++){document.body.style.zoom = window.innerHeight / document.getElementById('surfValuesBlock').offsetHeight}};window.addEventListener('resize', applySize);applySize()
+        function applySize(){
+            iteration( 0 )
+
+            function iteration ( i ) {
+                document.body.style.zoom = window.innerHeight / document.body.scrollHeight 
+                ;( i < 10 ) && ( setTimeout( function(){ iteration( i + 1 ) }, 1 ) )
+            }
+        }
+        window.addEventListener('resize', applySize)
+        applySize()
         </script>
     </body>
 </body>
